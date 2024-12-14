@@ -1,0 +1,65 @@
+/* styles.css */
+/**
+ * styles.css
+ *
+ * Basic styling for the Tic Tac Toe application.
+ * Includes styling for the game board, cells, and game status display.
+ */
+
+/* Basic styling for the app container */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin-bottom: 15px;
+}
+
+/* Styling for each board row */
+.board-row {
+  display: flex;
+}
+
+/* Styling for individual cells */
+.cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #556;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+/* Styling for the reset button */
+.reset-button {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+/* Reset button hover effect */
+.reset-button:hover {
+  background-color: #21a1f1;
+}
