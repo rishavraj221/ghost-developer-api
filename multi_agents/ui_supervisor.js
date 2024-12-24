@@ -32,7 +32,9 @@ export const ui_supervisor_agent = async ({ query, ui_dir_path }) => {
                 **Tech Stack** - React JS
 
                 following is the folder structure - 
-                ${getFolderStructure({ dir: ui_dir_path })}
+                ${getFolderStructure({ dir: ui_dir_path, as_array: true }).join(
+                  "\n"
+                )}
 
                 UI package.json - (see the dependency, if you have to add a new dependency, add it in the array of the field 'new_dependencies')
                 ${fs.readFileSync(path.join(ui_dir_path, "package.json"))}

@@ -1,0 +1,205 @@
+{
+  "6l11439m52a46yc": {
+    "is_query_clear": true,
+    "doubt_to_ask": "",
+    "reply_to_user": "Ok, I got you! We will build a simple to-do application with functionalities to add, edit, delete tasks and subtasks, categorize them, and set deadlines.",
+    "epics": [
+      {
+        "id": "e1",
+        "title": "Task Management",
+        "description": "Users can manage their primary tasks and subtasks.",
+        "stories": [
+          {
+            "id": "e1s1",
+            "title": "Add Task",
+            "description": "As a user, I want to add a new task so that I can keep track of my to-dos.",
+            "tasks": [
+              {
+                "id": "e1s1t1",
+                "task": "Design the user interface for adding a task"
+              },
+              {
+                "id": "e1s1t2",
+                "task": "Implement backend logic for storing the task"
+              },
+              {
+                "id": "e1s1t3",
+                "task": "Add form validation for task input"
+              },
+              {
+                "id": "e1s1t4",
+                "task": "Develop notification for successful task creation"
+              }
+            ],
+            "acceptance_criteria": [
+              "Task is saved successfully in the database",
+              "User receives a confirmation message after task creation",
+              "Newly created task appears in the task list"
+            ]
+          },
+          {
+            "id": "e1s2",
+            "title": "Edit Task",
+            "description": "As a user, I want to edit an existing task to update its details.",
+            "tasks": [
+              {
+                "id": "e1s2t1",
+                "task": "Create an interface for editing a task"
+              },
+              {
+                "id": "e1s2t2",
+                "task": "Implement logic to update task in the database"
+              },
+              {
+                "id": "e1s2t3",
+                "task": "Ensure the updated task reflects in the task list"
+              }
+            ],
+            "acceptance_criteria": [
+              "The changes made to the task are saved in the database",
+              "User receives a confirmation message after editing",
+              "The task list shows the updated details"
+            ]
+          },
+          {
+            "id": "e1s3",
+            "title": "Delete Task",
+            "description": "As a user, I want to delete a task that I no longer need to keep.",
+            "tasks": [
+              {
+                "id": "e1s3t1",
+                "task": "Implement delete functionality on the task interface"
+              },
+              {
+                "id": "e1s3t2",
+                "task": "Confirm with the user before deleting a task"
+              },
+              {
+                "id": "e1s3t3",
+                "task": "Remove the deleted task from the database"
+              }
+            ],
+            "acceptance_criteria": [
+              "Task is removed from the database",
+              "User receives a confirmation message after deletion",
+              "Deleted task no longer appears in the task list"
+            ]
+          },
+          {
+            "id": "e1s4",
+            "title": "Add Subtask",
+            "description": "As a user, I want to add subtasks to my tasks for better organization.",
+            "tasks": [
+              {
+                "id": "e1s4t1",
+                "task": "Create a user interface for adding subtasks"
+              },
+              {
+                "id": "e1s4t2",
+                "task": "Link subtasks to their respective parent tasks in the database"
+              },
+              {
+                "id": "e1s4t3",
+                "task": "Implement validation for subtask input"
+              }
+            ],
+            "acceptance_criteria": [
+              "Subtask is saved in the database under the correct parent task",
+              "User receives a confirmation message after subtask creation",
+              "Subtask appears under the corresponding main task"
+            ]
+          },
+          {
+            "id": "e1s5",
+            "title": "Edit Subtask",
+            "description": "As a user, I want to edit a subtask to update its details as needed.",
+            "tasks": [
+              {
+                "id": "e1s5t1",
+                "task": "Create an interface for editing a subtask"
+              },
+              {
+                "id": "e1s5t2",
+                "task": "Implement logic to update the subtask in the database"
+              }
+            ],
+            "acceptance_criteria": [
+              "Changes made to the subtask are reflected in the database",
+              "User receives a confirmation message after editing",
+              "Subtask details are updated in the task list"
+            ]
+          },
+          {
+            "id": "e1s6",
+            "title": "Delete Subtask",
+            "description": "As a user, I want to delete a subtask that is no longer needed.",
+            "tasks": [
+              {
+                "id": "e1s6t1",
+                "task": "Implement delete functionality for subtasks"
+              },
+              {
+                "id": "e1s6t2",
+                "task": "Confirm with the user before deleting a subtask"
+              },
+              {
+                "id": "e1s6t3",
+                "task": "Remove the deleted subtask from the database"
+              }
+            ],
+            "acceptance_criteria": [
+              "Subtask is removed from the database",
+              "User receives a confirmation message after deletion",
+              "Deleted subtask no longer appears under the parent task"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e2",
+        "title": "Task Categorization and Deadlines",
+        "description": "Users can categorize tasks and set deadlines for better organization.",
+        "stories": [
+          {
+            "id": "e2s1",
+            "title": "Categorize Task",
+            "description": "As a user, I want to categorize my tasks so that I can group them by type or project.",
+            "tasks": [
+              {
+                "id": "e2s1t1",
+                "task": "Create category options in the task creation interface"
+              },
+              {
+                "id": "e2s1t2",
+                "task": "Develop logic to link tasks with selected categories in the database"
+              }
+            ],
+            "acceptance_criteria": [
+              "Tasks can be assigned to categories during creation",
+              "The task list allows filtering by category"
+            ]
+          },
+          {
+            "id": "e2s2",
+            "title": "Set Deadline on Task",
+            "description": "As a user, I want to set a deadline for my tasks so that I can prioritize my workload.",
+            "tasks": [
+              {
+                "id": "e2s2t1",
+                "task": "Add a deadline input field in the task creation and editing interfaces"
+              },
+              {
+                "id": "e2s2t2",
+                "task": "Implement logic to store deadlines in the database"
+              }
+            ],
+            "acceptance_criteria": [
+              "Tasks are saved with associated deadlines",
+              "User receives a notification for reminders on upcoming deadlines"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

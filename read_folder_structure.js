@@ -71,7 +71,11 @@ function printFolderStructure(structure, indent = "") {
 
 // // Specify the directory you want to get the folder structure for
 // const directoryPath = path.join(
-//   "/Users/rishavraj/Downloads/picalive/base-app-api"
+//   "/Users/rishavraj/Downloads/picalive/lean-product/react-ui"
+// );
+
+// console.log(
+//   getFolderStructure({ dir: directoryPath, as_array: true }).join("\n")
 // );
 
 // // Get the folder structure and print it
